@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+body {
+    background-color: rgb(10, 24, 74);
+}
+
+#login_form {
+    position: absolute;
+    margin: none;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    background-color: rgb(53, 53, 53);
+    width: 20vw;
+    height: 30vh;
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+#login_form>.input_field {
+    margin: 8px;
+    width: calc(100% - 32px);
+    height: 16px;
+    padding: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 11pt;
+    color: white;
+    font-family: "Ubuntu";
+
+    /* Transitions */
+    transition-duration: 150ms;
+    transition-property: border-color;
+}
+
+#login_form>.input_field:hover {
+    border-color:white;
+}
+
+#login_form>input[type="submit"] {
+    margin: 8px;
+    margin-top: 28px;
+    width: calc(100% - 16px);
+    height: 38px;
+    padding: 8px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    outline: none;
+    border-color: transparent;
+    font-size: 11pt;
+    background: linear-gradient(60deg, rgba(29,75,210,1) 0%, rgba(196,0,255,1) 100%);
+    background-size: 110% 110%;
+    background-position: 10% -10%;
+    color: white;
+    font-family: "Ubuntu";
+    cursor: pointer;
+    
+    /* Transitions */
+    transition-duration: 150ms;
+    transition-property: border-color;
+}
+
+#login_form>input[type="submit"]:hover {
+    border-color:white;
+}
