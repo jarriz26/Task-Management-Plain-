@@ -6,10 +6,14 @@
 </head>
     <body>
         <form id="login_form" >
-            <input type="text" id="user_id" name="user_id" placeholder="User ID" class="input_field"><br>
+            
+            <input type="text" id="user_id" name="user_id" placeholder="User ID" class="input_field" onchange="checkUserIdInput(this)"><br>
+            
             <input id="password" type="password" name="password" placeholder="Password" class="input_field"><br>
             <input type="submit" value="Login">
             
         </form>
+        <script src="../js/util.js"></script>
+        <script src="../js/login.js"></script>
     </body>
 </html>
